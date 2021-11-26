@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Nov 23, 2021 at 10:16 PM
+-- Generation Time: Nov 26, 2021 at 01:44 PM
 -- Server version: 5.7.24
 -- PHP Version: 7.2.19
 
@@ -31,8 +31,16 @@ CREATE TABLE `livre` (
   `id` int(11) NOT NULL,
   `titre` varchar(255) NOT NULL,
   `auteur` varchar(255) NOT NULL,
-  `editeur` varchar(255) NOT NULL
+  `editeur` varchar(255) NOT NULL,
+  `isbn` bigint(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `livre`
+--
+
+INSERT INTO `livre` (`id`, `titre`, `auteur`, `editeur`, `isbn`) VALUES
+(2, 'Le temps des tempetes', 'Nicolas Sarkozy', 'L\'observatoire Eds De', 9791032917169);
 
 --
 -- Indexes for dumped tables
@@ -42,7 +50,8 @@ CREATE TABLE `livre` (
 -- Indexes for table `livre`
 --
 ALTER TABLE `livre`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `isbn` (`isbn`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -52,7 +61,7 @@ ALTER TABLE `livre`
 -- AUTO_INCREMENT for table `livre`
 --
 ALTER TABLE `livre`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
