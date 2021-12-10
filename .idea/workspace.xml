@@ -29,7 +29,20 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
   </component>
-  <component name="RunManager" selected="Application.ProgrammeClient">
+  <component name="RunManager" selected="Application.CreationDatabase">
+    <configuration name="CreationDatabase" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="fr.upjv.bdd.CreationDatabase" />
+      <module name="ProjetClientServeurJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fr.upjv.bdd.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ProgrammeClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="fr.upjv.client.ProgrammeClient" />
       <module name="ProjetClientServeurJava" />
@@ -58,6 +71,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CreationDatabase" />
         <item itemvalue="Application.ProgrammeClient" />
         <item itemvalue="Application.ProgrammeServeur" />
       </list>
